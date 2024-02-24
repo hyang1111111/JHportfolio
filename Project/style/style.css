@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Pretendard";
+  line-height: normal;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.nav_container .notice {
+  text-decoration: none;
+  color: blue;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 18px;
+}
+
+.project_container {
+  width: auto;
+  height: auto;
+  margin-block: 18px;
+  margin-inline: 160px;
+  padding-inline: 18px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 18px;
+}
+.project_container .project {
+  display: grid;
+  flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  gap: 10px;
+}
+.project_container .project .text_container .category {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  padding-bottom: 10px;
+}
+.project_container .project .text_container .category .text_category {
+  color: white;
+  border-radius: 8px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-inline: 8px;
+}
+.project_container .project .text_container .text_title {
+  color: white;
+  font-size: 18px;
+  margin-block: 4px;
+  margin-inline: 6px;
+}
+
+.img {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  padding: 6px;
+}
+
+video {
+  max-width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  padding: 6px;
+}
