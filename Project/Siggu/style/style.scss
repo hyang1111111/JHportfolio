@@ -9,38 +9,35 @@ body {
   font-family: 'Pretendard';
   line-height: normal;
   overflow-x: hidden;
-  background-color: darkgray;
+  background-color: rgb(17, 17, 17);
 }
+
 .nav {
   a {
     text-decoration: none;
-    color: blue;
+    color: whitesmoke;
   }
 
   .home::before {
     content: 'KIMJIHYANG';
     text-decoration: none;
-    color: blue;
+    color: whitesmoke;
   }
   .home:hover::before {
     content: '김지향';
     margin-right: 55px;
     text-decoration: none;
-    color: blue;
+    color: whitesmoke;
   }
   .project::before {
     content: 'Project';
     text-decoration: none;
-    color: blue;
+    color: whitesmoke;
   }
   .project:hover::before {
     content: '프로젝트';
     text-decoration: none;
-    color: blue;
-  }
-  .project:hover::after {
-    text-decoration: none;
-    color: blue;
+    color: whitesmoke;
   }
   .project:focus::after {
     content: 'Project';
@@ -49,18 +46,18 @@ body {
     border-radius: 30px;
     border: 2px solid whitesmoke;
     width: fit-content;
-    margin-block: 2px;
   }
   .info::before {
     content: 'Info';
     text-decoration: none;
-    color: blue;
+    color: whitesmoke;
   }
   .info:hover::before {
     content: '정보';
     text-decoration: none;
-    color: blue;
+    color: whitesmoke;
   }
+
   .nav_container {
     display: flex;
     justify-content: space-between;
@@ -80,54 +77,42 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 18px;
-  .project_contents {
-    display: grid;
-    flex-direction: column;
-    width: fit-content;
-    height: auto;
-    gap: 10px;
-    .text_container {
-      .category {
-        display: flex;
-        flex-direction: row;
-        gap: 6px;
-        padding-bottom: 10px;
-        .text_category {
-          color: whitesmoke;
-          border-radius: 8px;
-          width: fit-content;
-          padding-inline: 8px;
-        }
+  .text {
+    margin-block: 60px;
+    .text_title {
+      display: flex;
+      color: whitesmoke;
+      align-items: flex-end;
+      gap: 10px;
+      .title {
+        font-size: 30px;
+        font-weight: 600;
       }
-      .text_title {
-        color: whitesmoke;
-        font-size: 18px;
-        margin-block: 4px;
-        margin-inline: 6px;
+      .category {
+        width: fit-content;
+        height: fit-content;
+        color: white;
+        border-radius: 8px;
+        padding-inline: 8px;
       }
     }
   }
 }
 
 .img {
-  display: flex;
-  flex-wrap: wrap;
+  width: fit-content;
+  background-color: white;
   margin: 0;
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }
 
-img {
-  max-width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  padding: 6px;
-}
-
-video {
-  max-width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  padding: 6px;
+p {
+  color: whitesmoke;
+  line-height: 170%;
+  margin-inline: 0px;
+  margin-block: 18px;
 }

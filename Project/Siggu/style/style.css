@@ -10,37 +10,33 @@ body {
   font-family: "Pretendard";
   line-height: normal;
   overflow-x: hidden;
-  background-color: darkgray;
+  background-color: rgb(17, 17, 17);
 }
 
 .nav a {
   text-decoration: none;
-  color: blue;
+  color: whitesmoke;
 }
 .nav .home::before {
   content: "KIMJIHYANG";
   text-decoration: none;
-  color: blue;
+  color: whitesmoke;
 }
 .nav .home:hover::before {
   content: "김지향";
   margin-right: 55px;
   text-decoration: none;
-  color: blue;
+  color: whitesmoke;
 }
 .nav .project::before {
   content: "Project";
   text-decoration: none;
-  color: blue;
+  color: whitesmoke;
 }
 .nav .project:hover::before {
   content: "프로젝트";
   text-decoration: none;
-  color: blue;
-}
-.nav .project:hover::after {
-  text-decoration: none;
-  color: blue;
+  color: whitesmoke;
 }
 .nav .project:focus::after {
   content: "Project";
@@ -51,17 +47,16 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-block: 2px;
 }
 .nav .info::before {
   content: "Info";
   text-decoration: none;
-  color: blue;
+  color: whitesmoke;
 }
 .nav .info:hover::before {
   content: "정보";
   text-decoration: none;
-  color: blue;
+  color: whitesmoke;
 }
 .nav .nav_container {
   display: flex;
@@ -81,56 +76,48 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: 18px;
 }
-.project_container .project_contents {
-  display: grid;
-  flex-direction: column;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: auto;
+.project_container .text {
+  margin-block: 60px;
+}
+.project_container .text .text_title {
+  display: flex;
+  color: whitesmoke;
+  align-items: flex-end;
   gap: 10px;
 }
-.project_container .project_contents .text_container .category {
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
-  padding-bottom: 10px;
+.project_container .text .text_title .title {
+  font-size: 30px;
+  font-weight: 600;
 }
-.project_container .project_contents .text_container .category .text_category {
-  color: whitesmoke;
-  border-radius: 8px;
+.project_container .text .text_title .category {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+  border-radius: 8px;
   padding-inline: 8px;
-}
-.project_container .project_contents .text_container .text_title {
-  color: whitesmoke;
-  font-size: 18px;
-  margin-block: 4px;
-  margin-inline: 6px;
 }
 
 .img {
-  display: flex;
-  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  margin: 0;
+}
+.img img {
+  width: 100%;
+  height: auto;
   margin: 0;
 }
 
-img {
-  max-width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  padding: 6px;
-}
-
-video {
-  max-width: 100%;
-  max-height: 400px;
-  overflow: hidden;
-  padding: 6px;
+p {
+  color: whitesmoke;
+  line-height: 170%;
+  margin-inline: 0px;
+  margin-block: 18px;
 }
