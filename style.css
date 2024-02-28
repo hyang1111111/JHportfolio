@@ -95,7 +95,7 @@ body {
 .main .title {
   margin: 16px;
   font-weight: 600;
-  color: blue;
+  color: whitesmoke;
 }
 .main .text {
   font-size: 30px;
@@ -103,8 +103,8 @@ body {
   margin-right: 16px;
   margin-top: 20px;
   margin-bottom: 80px;
-  color: rgb(33, 33, 33);
+  color: rgb(219, 219, 219);
 }
 .main .text span {
-  color: blue;
+  color: whitesmoke;
 }

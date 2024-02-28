@@ -10,10 +10,10 @@ body {
   font-family: "Pretendard";
   line-height: normal;
   overflow-x: hidden;
-  background-color: rgb(17, 17, 17);
+  background-color: black;
 }
 
-.project_link {
+.info_link {
   text-decoration: none;
   color: whitesmoke;
   border-radius: 30px;
@@ -22,7 +22,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
 }
-.project_link a {
+.info_link a {
   padding: 8px;
 }
 
@@ -34,12 +34,17 @@ body {
   content: "KIMJIHYANG";
   text-decoration: none;
   color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .nav .home:hover::before {
   content: "김지향";
-  margin-right: 55px;
   text-decoration: none;
   color: whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .nav .project::before {
   content: "Project";
@@ -76,65 +81,30 @@ body {
   padding-inline: 16px;
 }
 
-.project_container {
-  width: auto;
-  height: auto;
-  margin-block: 18px;
-  margin-inline: 160px;
-  padding-inline: 18px;
+.background {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
 }
-.project_container .text {
-  margin-block: 60px;
+.background img {
+  width: 400px;
+  height: 400px;
+  width: 100%;
 }
-.project_container .text .text_title {
-  display: flex;
-  color: whitesmoke;
-  align-items: flex-end;
-  gap: 10px;
-}
-.project_container .text .text_title .title {
-  font-size: 30px;
+
+.main .title {
+  margin: 16px;
   font-weight: 600;
-}
-.project_container .text .text_title .category {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  color: white;
-  border-radius: 8px;
-  padding-inline: 8px;
-}
-
-.img {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 0;
-  margin-bottom: 160px;
-}
-.img img {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  vertical-align: top;
-}
-.img video {
-  width: 100%;
-  height: auto;
-  margin: 0;
-  vertical-align: bottom;
-}
-
-p {
   color: whitesmoke;
-  line-height: 170%;
-  margin-inline: 0px;
-  margin-block: 18px;
+}
+.main .text {
+  font-size: 30px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  color: rgb(220, 220, 220);
+}
+.main .text span {
+  color: whitesmoke;
 }
