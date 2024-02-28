@@ -13,6 +13,19 @@ body {
   background-color: rgb(17, 17, 17);
 }
 
+.project_link {
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 30px;
+  border: 1px solid whitesmoke;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.project_link a {
+  padding: 8px;
+}
+
 .nav a {
   text-decoration: none;
   color: whitesmoke;
@@ -38,15 +51,9 @@ body {
   text-decoration: none;
   color: whitesmoke;
 }
-.nav .project:focus::after {
-  content: "Project";
+.nav .project:hover::after {
   text-decoration: none;
   color: whitesmoke;
-  border-radius: 30px;
-  border: 2px solid whitesmoke;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 .nav .info::before {
   content: "Info";
@@ -64,7 +71,9 @@ body {
   margin: 16px;
   font-family: "Pretendard";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
+  padding-block: 8px;
+  padding-inline: 16px;
 }
 
 .project_container {
@@ -106,13 +115,20 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: white;
   margin: 0;
+  margin-bottom: 160px;
 }
 .img img {
   width: 100%;
   height: auto;
   margin: 0;
+  vertical-align: bottom;
+}
+.img video {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  vertical-align: bottom;
 }
 
 p {

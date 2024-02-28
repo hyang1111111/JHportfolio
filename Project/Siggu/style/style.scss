@@ -12,6 +12,16 @@ body {
   background-color: rgb(17, 17, 17);
 }
 
+.project_link {
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 30px;
+  border: 1px solid whitesmoke;
+  width: fit-content;
+  a {
+    padding: 8px;
+  }
+}
 .nav {
   a {
     text-decoration: none;
@@ -39,13 +49,9 @@ body {
     text-decoration: none;
     color: whitesmoke;
   }
-  .project:focus::after {
-    content: 'Project';
+  .project:hover::after {
     text-decoration: none;
     color: whitesmoke;
-    border-radius: 30px;
-    border: 2px solid whitesmoke;
-    width: fit-content;
   }
   .info::before {
     content: 'Info';
@@ -57,14 +63,15 @@ body {
     text-decoration: none;
     color: whitesmoke;
   }
-
   .nav_container {
     display: flex;
     justify-content: space-between;
     margin: 16px;
     font-family: 'Pretendard';
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
+    padding-block: 8px;
+    padding-inline: 16px;
   }
 }
 
@@ -101,12 +108,19 @@ body {
 
 .img {
   width: fit-content;
-  background-color: white;
   margin: 0;
+  margin-bottom: 160px;
   img {
     width: 100%;
     height: auto;
     margin: 0;
+    vertical-align: bottom;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    vertical-align: bottom;
   }
 }
 
